@@ -16,3 +16,12 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.mainpagefirstpage {
+    background-image: url('../Images/background.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
