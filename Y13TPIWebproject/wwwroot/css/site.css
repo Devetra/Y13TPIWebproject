@@ -9,8 +9,10 @@ html {
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+    scroll-snap-type: y mandatory;
+
 }
 
 body {
@@ -25,3 +27,29 @@ body {
     background-size: cover;
 }
 
+.mainpagerestpage {
+    background-color: white;
+}
+
+.backgroundblur {
+    backdrop-filter: blur(20px)
+}
+
+.scrollsnap {
+    scroll-snap-type: y mandatory;
+}
+
+.sectionnavbar {
+    scroll-snap-align: start;
+}
+section {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+
+.slogan {
+    position: relative;
+    text-align:center;
+    top: 40vh;
+}
