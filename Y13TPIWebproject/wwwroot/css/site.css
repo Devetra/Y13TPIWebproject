@@ -11,9 +11,10 @@ html {
   }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .mainpagefirstpage {
@@ -54,11 +55,6 @@ section {
     scroll-snap-align: start;
 }
 
-.slogan {
-    position: relative;
-    text-align:center;
-    top: 40vh;
-}
 
 .mainpagestationary {
     background-image: url('../Images/stationaryimg1stpage2.jpeg');
@@ -102,4 +98,14 @@ h2 {
     width: 50%;
     padding: 20px;
     text-align: center;
+}
+
+.slogan {
+    color: black;
+    position: relative;
+    font-weight: 500;
+    top: 40vh;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Lato', sans-serif;
 }
