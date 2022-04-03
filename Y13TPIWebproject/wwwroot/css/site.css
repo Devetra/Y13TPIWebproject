@@ -11,7 +11,8 @@ html {
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 
 body {
     margin-bottom: 60px;
@@ -63,7 +64,6 @@ section {
     scroll-snap-align: start;
 }
 
-
 .mainpagestationary {
     background-image: url('../Images/stationaryimg1stpage2.jpeg');
     background-repeat: no-repeat;
@@ -111,17 +111,27 @@ h2 {
 .slogan {
     color: black;
     position: relative;
-    font-weight: 500;
-    top: 40vh;
+    top: 36vh;
     text-align: center;
-    font-size: 60px;
-    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 5vw;
+    font-family: 'Paytone One', sans-serif;
+}
+
+.slogan2 {
+    color: floralwhite;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4vw;
+    font-family: 'Libre Baskerville', serif;
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
-    margin: 30px;
+    margin: 0 auto;
+    margin-bottom: 40px;
     text-align: center;
     font-family: arial;
 }
@@ -144,6 +154,9 @@ h2 {
 }
 
 .card button:hover {
-        opacity: 0.7;
+    opacity: 0.7;
 }
 
+footer {
+    scroll-snap-align: end;
+}
