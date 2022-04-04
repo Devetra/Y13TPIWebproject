@@ -80,6 +80,10 @@ section {
     background-size: cover;
 }
 
+.mainpagecart {
+    background-color: azure;
+}
+
 .button {
     position: absolute;
     top: 71%;
@@ -127,21 +131,22 @@ h2 {
     font-family: 'Libre Baskerville', serif;
 }
 
-.card {
+.pcard {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
+    background-color: floralwhite;
     margin: 0 auto;
     margin-bottom: 40px;
     text-align: center;
     font-family: arial;
 }
 
-.price {
+.graytext {
     color: grey;
     font-size: 22px;
 }
 
-.card button {
+.pcard button {
     border: none;
     outline: 0;
     padding: 12px;
@@ -153,10 +158,11 @@ h2 {
     font-size: 18px;
 }
 
-.card button:hover {
-    opacity: 0.7;
+.pcard button:hover {
+    opacity: 0.75;
 }
 
 footer {
     scroll-snap-align: end;
 }
+
