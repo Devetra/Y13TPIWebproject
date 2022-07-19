@@ -241,7 +241,7 @@ namespace Y13TPIWebproject.Migrations
 
                     b.HasKey("ProductID");
 
-                    b.ToTable("Product");
+                    b.ToTable("Product", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

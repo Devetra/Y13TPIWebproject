@@ -4,6 +4,10 @@
     {
         public int ProductID { get; set; }
         public string ProductName { get; set; }
+        public Product(string productName)
+        {
+            ProductName = productName;
+        }
         public decimal Price { get; set; }
     }
 }

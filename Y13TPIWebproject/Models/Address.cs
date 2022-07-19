@@ -8,5 +8,12 @@
         public string Suburb { get; set; }
         public string City { get; set; }
         public int Zip { get; set; }
+
+        public Address(string street, string suburb, string city)
+        {
+            Street = street;
+            Suburb = suburb;
+            City = city;
+        }
     }
 }
