@@ -8,5 +8,7 @@
 
         public Customer Customer { get; set; }
         public Checkout Checkout { get; set; }
+
+        public ICollection<Customer> Customers { get; set; }
     }
 }

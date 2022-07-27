@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Y13TPIWebproject.Areas.Identity.Data;
 
@@ -11,9 +12,10 @@ using Y13TPIWebproject.Areas.Identity.Data;
 namespace Y13TPIWebproject.Migrations
 {
     [DbContext(typeof(Y13TPIWebprojectContextDB))]
-    partial class Y13TPIWebprojectContextDBModelSnapshot : ModelSnapshot
+    [Migration("20220726020454_addedTables")]
+    partial class addedTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

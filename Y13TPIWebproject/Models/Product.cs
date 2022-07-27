@@ -9,5 +9,7 @@
             ProductName = productName;
         }
         public decimal Price { get; set; }
+
+        public ICollection<Product_Checkout> Product_Checkouts { get; set; }
     }
 }
