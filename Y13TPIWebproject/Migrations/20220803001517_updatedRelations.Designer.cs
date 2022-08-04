@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Y13TPIWebproject.Areas.Identity.Data;
 
@@ -11,9 +12,10 @@ using Y13TPIWebproject.Areas.Identity.Data;
 namespace Y13TPIWebproject.Migrations
 {
     [DbContext(typeof(Y13TPIWebprojectContextDB))]
-    partial class Y13TPIWebprojectContextDBModelSnapshot : ModelSnapshot
+    [Migration("20220803001517_updatedRelations")]
+    partial class updatedRelations
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -302,8 +304,6 @@ namespace Y13TPIWebproject.Migrations
 
                     b.HasKey("CustomerID");
 
-                    b.HasIndex("AddressID");
-
                     b.ToTable("Customer");
                 });
 
@@ -399,17 +399,6 @@ namespace Y13TPIWebproject.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("Y13TPIWebproject.Models.Customer", b =>
-                {
-                    b.HasOne("Y13TPIWebproject.Models.Address", "Address")
-                        .WithMany()
-                        .HasForeignKey("AddressID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Address");
                 });
 
             modelBuilder.Entity("Y13TPIWebproject.Models.Order", b =>

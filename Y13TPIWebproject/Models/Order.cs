@@ -1,4 +1,9 @@
-﻿namespace Y13TPIWebproject.Models
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Y13TPIWebproject.Models
 {
     public class Order
     {
@@ -9,6 +14,6 @@
         public Customer Customer { get; set; }
         public Checkout Checkout { get; set; }
 
-        public ICollection<Customer> Customers { get; set; }
+        
     }
 }
