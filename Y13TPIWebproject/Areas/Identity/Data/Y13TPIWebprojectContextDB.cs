@@ -23,11 +23,11 @@ public class Y13TPIWebprojectContextDB : IdentityDbContext<Y13TPIWebprojectUser>
 
     public DbSet<Y13TPIWebproject.Models.Product>? Product { get; set; }
 
-    public DbSet<Y13TPIWebproject.Models.Address>? Address { get; set; }
+  
 
-    public DbSet<Y13TPIWebproject.Models.Checkout>? Checkout { get; set; }
+
 
     public DbSet<Y13TPIWebproject.Models.Customer>? Customer { get; set; }
 
-    public DbSet<Y13TPIWebproject.Models.Order>? Order { get; set; }
+
 }

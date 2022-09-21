@@ -20,7 +20,7 @@ namespace Y13TPIWebproject.Pages.Products
         }
 
         [BindProperty]
-      public Product Product { get; set; } = default!;
+      public Product Product { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {

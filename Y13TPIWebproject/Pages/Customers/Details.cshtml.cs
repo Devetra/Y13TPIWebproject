@@ -19,7 +19,7 @@ namespace Y13TPIWebproject.Pages.Customers
             _context = context;
         }
 
-      public Customer Customer { get; set; } = default!; 
+      public Customer Customer { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {

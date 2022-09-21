@@ -19,7 +19,7 @@ namespace Y13TPIWebproject.Pages.Products
             _context = context;
         }
 
-      public Product Product { get; set; } = default!; 
+      public Product Product { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {

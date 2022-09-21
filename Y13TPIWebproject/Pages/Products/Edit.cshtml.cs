@@ -71,7 +71,7 @@ namespace Y13TPIWebproject.Pages.Products
 
         private bool ProductExists(int id)
         {
-          return (_context.Product?.Any(e => e.ProductID == id)).GetValueOrDefault();
+          return _context.Product.Any(e => e.ProductID == id);
         }
     }
 }

@@ -11,13 +11,15 @@ namespace Y13TPIWebproject.Models
         [Required]
         [Display(Name = "Product Name")]
         public string ProductName { get; set; }
-        public Product(string productName)
-        {
-            ProductName = productName;
-        }
+
         [Required]
         public decimal Price { get; set; }
+        public string Description { get; set; }
 
-  
+        public int Quantity { get; set; }
+
+
+
+
     }
 }

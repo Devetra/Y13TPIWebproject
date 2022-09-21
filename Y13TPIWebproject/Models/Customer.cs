@@ -14,14 +14,19 @@ namespace Y13TPIWebproject.Models
         [Required]
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
-        public int Phone { get; set; }
+        public string Phone { get; set; }
         [Required]
         public string Email { get; set; }
-        public int AddressID { get; set; }
 
-        public Address Address { get; set; }
+        public string StreetNumber { get; set; }
 
-        public ICollection<Order> Orders { get; set; }
+        public string StreetName { get; set; }
+
+        public string Surburb { get; set; }
+
+        public string City { get; set; }
+
+
 
 
     }

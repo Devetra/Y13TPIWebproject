@@ -71,7 +71,7 @@ namespace Y13TPIWebproject.Pages.Customers
 
         private bool CustomerExists(int id)
         {
-          return (_context.Customer?.Any(e => e.CustomerID == id)).GetValueOrDefault();
+          return _context.Customer.Any(e => e.CustomerID == id);
         }
     }
 }

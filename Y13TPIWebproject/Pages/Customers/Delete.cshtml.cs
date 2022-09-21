@@ -20,7 +20,7 @@ namespace Y13TPIWebproject.Pages.Customers
         }
 
         [BindProperty]
-      public Customer Customer { get; set; } = default!;
+      public Customer Customer { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {

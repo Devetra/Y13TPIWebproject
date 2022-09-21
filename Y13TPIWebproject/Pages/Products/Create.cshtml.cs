@@ -25,13 +25,13 @@ namespace Y13TPIWebproject.Pages.Products
         }
 
         [BindProperty]
-        public Product Product { get; set; } = default!;
+        public Product Product { get; set; }
         
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.Product == null || Product == null)
+          if (!ModelState.IsValid)
             {
                 return Page();
             }

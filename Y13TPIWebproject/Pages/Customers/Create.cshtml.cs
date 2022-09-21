@@ -25,13 +25,13 @@ namespace Y13TPIWebproject.Pages.Customers
         }
 
         [BindProperty]
-        public Customer Customer { get; set; } = default!;
+        public Customer Customer { get; set; }
         
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.Customer == null || Customer == null)
+          if (!ModelState.IsValid)
             {
                 return Page();
             }
