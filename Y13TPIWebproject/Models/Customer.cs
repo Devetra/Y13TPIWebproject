@@ -14,6 +14,13 @@ namespace Y13TPIWebproject.Models
         [Required]
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
+
+        [Display(Name = "Full Name")]
+        public string FullName
+        {
+            get { return FirstName + " " + LastName; }
+        }
+
         public string Phone { get; set; }
         [Required]
         public string Email { get; set; }
@@ -27,7 +34,7 @@ namespace Y13TPIWebproject.Models
         public string City { get; set; }
 
 
-
+        public ICollection<Order> Orders { get; set; }
 
     }
 }

@@ -18,7 +18,7 @@ namespace Y13TPIWebproject.Models
 
         public int Quantity { get; set; }
 
-
+        public ICollection<Order> Orders { get; set; }
 
 
     }
