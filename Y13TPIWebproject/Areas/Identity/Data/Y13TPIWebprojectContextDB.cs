@@ -29,5 +29,11 @@ public class Y13TPIWebprojectContextDB : IdentityDbContext<Y13TPIWebprojectUser>
 
     public DbSet<Y13TPIWebproject.Models.Customer>? Customer { get; set; }
 
+  
+
+
+
+    public DbSet<Y13TPIWebproject.Models.Order> Order { get; set; }
+
 
 }
