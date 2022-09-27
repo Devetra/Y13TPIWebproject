@@ -17,6 +17,9 @@
                 @Html.DisplayNameFor(model => model.Order[0].ProductID)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Order[0].ProductQuantity)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Order[0].customer)
             </th>
             <th></th>
@@ -27,6 +30,9 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.ProductID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductQuantity)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.customer.Email)

@@ -25,6 +25,11 @@
                 <span asp-validation-for="Order.ProductID" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="Order.ProductQuantity" class="control-label"></label>
+                <input asp-for="Order.ProductQuantity" class="form-control" />
+                <span asp-validation-for="Order.ProductQuantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>

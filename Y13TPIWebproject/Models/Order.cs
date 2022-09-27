@@ -11,8 +11,11 @@ namespace Y13TPIWebproject.Models
 
         public int CustomerID { get; set; }
         public int ProductID { get; set; }
+        [Required]
 
-        public Customer customer { get; set; }
+        [Display(Name = "Quantity")]
+        public int ProductQuantity{ get; set; }
+    public Customer customer { get; set; }
 
         public ICollection<Product> Products { get; set; }
     }
